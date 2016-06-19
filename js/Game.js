@@ -29,6 +29,10 @@ SpaceHipster.Game.prototype = {
 
   	//set world dimensions
     this.game.world.setBounds(0, 0, 1920, 1920);
+        
+    //  This will run in Canvas mode, so let's gain a little speed and display
+    this.game.renderer.clearBeforeRender = false;
+    this.game.renderer.roundPixels = true;
       
     //added for ship and bullet
     //  We need arcade physics
@@ -36,8 +40,12 @@ SpaceHipster.Game.prototype = {
     //  This will run in Canvas mode, so let's gain a little speed and display
     this.game.renderer.clearBeforeRender = false;
     this.game.renderer.roundPixels = true;
+        
+     //background
+    this.background = this.game.add.tileSprite(0, 0, this.game.world.width, this.game.world.height, 'space');
+
     
-        //  Our ships bullets
+    //  Our ships bullets
     bullets = this.game.add.group();
     bullets.enableBody = true;
     bullets.physicsBodyType = Phaser.Physics.ARCADE;
@@ -52,9 +60,7 @@ SpaceHipster.Game.prototype = {
     this.game.input.keyboard.addKeyCapture([ Phaser.Keyboard.SPACEBAR ]);
     //endo ship and bullet stuff
 
-    //background
-    this.background = this.game.add.tileSprite(0, 0, this.game.world.width, this.game.world.height, 'space');
-
+   
     //create player
     this.player = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'playership');
     this.player.scale.setTo(2);
@@ -145,6 +151,11 @@ if (cursors.up.isDown)
 
     //overlapping between player and collectables
     this.game.physics.arcade.overlap(this.player, this.collectables, this.collect, null, this);
+      
+    //collision of bullet and asteroid
+    this.game.physics.arcade.collide(this.bullets, this.asteroids, null, this);
+      
+   
   },
     
     
@@ -153,10 +164,11 @@ if (cursors.up.isDown)
         if (this.game.time.now > bulletTime){
              bullet = bullets.getFirstExists(false);
              if (bullet){
+            console.log("bullet = ") + (bullet);
             //play the sound
             this.fireSound.play();
             //  And fire it
-            bullet.reset(this.player.body.x, this.player.body.y);
+            bullet.reset(this.player.body.x + 16, this.player.body.y + 16);
             bullet.lifespan = 2000;
             bullet.rotation = this.player.rotation;
             this.game.physics.arcade.velocityFromRotation(this.player.rotation, 400, bullet.body.velocity);
@@ -214,7 +226,7 @@ if (cursors.up.isDown)
             rockType.sizeType = "small"
             astroidarray.push(rockType);
         }
-        console.log(rockType);
+       // console.log(rockType);
     },
 
   generateCollectables: function() {
@@ -257,10 +269,28 @@ if (cursors.up.isDown)
       asteriod.body.collideWorldBounds = true;
 
         //DEBUG
-        console.log(asteriod.height)
+        //console.log(asteriod.height)
       },
+    
+    shootAsteroid: function(player, asteroid) {
+    //play explosion sound
+    this.explosion.play();
+        
+    //make the asteroid explode
+    var emitter = this.add.emitter(this.asteroid.x, this.asteroid.y, 100);
+    emitter.makeParticles('playerParticle');
+    emitter.minParticleSpeed.setTo(-200, -200);
+    emitter.maxParticleSpeed.setTo(200, 200);
+    emitter.gravity = 0;
+    emitter.start(true, 1000, null, 100);
+    this.asteroid.kill();
+    },
+    
+    
+    
+    
 
-  hitAsteroid: function(player, asteroid) {
+    hitAsteroid: function(player, asteroid) {
     //play explosion sound
     this.explosionSound.play();
 
@@ -275,6 +305,8 @@ if (cursors.up.isDown)
 
     this.game.time.events.add(800, this.gameOver, this);
   },
+    
+    
   gameOver: function() {
     //pass it the score as a parameter
     this.game.state.start('MainMenu', true, false, this.playerScore);
@@ -298,6 +330,7 @@ if (cursors.up.isDown)
     this.scoreLabel.fixedToCamera = true;
   }
 };
+
 
 /*
 TODO
