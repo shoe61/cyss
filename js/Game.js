@@ -110,9 +110,9 @@ SpaceHipster.Game.prototype = {
        console.log("pushRocksToArray: " + size)
 
         var rockType = {
-        sizePick: null,
-        sizeType: "",
-        velocityRock: null
+            sizePick: null,
+            sizeType: "",
+            velocityRock: null
             };
         //if wanting to push big rock object to array
         if (size == "large"){
@@ -123,19 +123,6 @@ SpaceHipster.Game.prototype = {
 
             //Temp push to populate velocity (based on weighted array)
             astroidarray.push(rockType);
-
-            //VELOCITY
-            //since smaller numbers are in front of array use these as slower speeds
-            rockType.velocityRock = this.game.rnd.weightedPick(astroidarray).sizePick;
-            console.log("before speed: " + rockType.velocityRock);
-            //make the velocity either positive or negative
-            rockType.velocityRock *= this.game.rnd.pick([-1,1])
-            console.log("after speed: " + rockType.velocityRock);
-
-            //Revert temp push
-            astroidarray.pop();
-            //pushes it to the array of astroids
-            astroidarray.push(rockType);
         }
         //if wanting to push small rock object to array
         else{
@@ -143,24 +130,6 @@ SpaceHipster.Game.prototype = {
             rockType.sizeType = "small"
 
             //Temp push to populate velocity (based on weighted array)
-            astroidarray.push(rockType);
-
-            //VELOCITY
-            //since higher numbers are in back of array use these as faster speeds
-            //reverse the array to get higher values to front
-            astroidarray.reverse();
-
-            rockType.velocityRock = this.game.rnd.weightedPick(astroidarray).sizePick;
-            console.log("before speed: " + rockType.velocityRock);
-            //make the velocity either positive or negative
-            rockType.velocityRock *= this.game.rnd.pick([-1,1])
-            console.log("after speed: " + rockType.velocityRock);
-
-            //put array to original order
-            astroidarray.reverse();
-            //Revert temp push
-            astroidarray.pop();
-            //pushes it to the array of astroids
             astroidarray.push(rockType);
         }
         console.log(rockType);
@@ -197,8 +166,25 @@ SpaceHipster.Game.prototype = {
         var pik = chosenastroid.sizePick / 1000 * 20;
       asteriod.scale.setTo(pik);
 
+
+        if(chosenastroid.sizeType == "large")
+            chosenastroid.velocityRock = this.game.rnd.weightedPick(astroidarray).sizePick *.9;
+        else
+        {
+            //if small weigh toward higher speeds
+            astroidarray.reverse();
+            chosenastroid.velocityRock = this.game.rnd.weightedPick(astroidarray).sizePick * 1.2 ;
+            console.log("astro reverse small: " + chosenastroid.velocityRock);
+            //Put back in order
+            astroidarray.reverse();
+        }
+
       //physics properties
+        //make the velocity either positive or negative
+      chosenastroid.velocityRock *= this.game.rnd.pick([-1,1])
       asteriod.body.velocity.x = chosenastroid.velocityRock;
+        //make the velocity either positive or negative
+      chosenastroid.velocityRock *= this.game.rnd.pick([-1,1])
       asteriod.body.velocity.y = chosenastroid.velocityRock;
       asteriod.body.immovable = true;
       asteriod.body.collideWorldBounds = true;
