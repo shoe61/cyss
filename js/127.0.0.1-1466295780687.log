@@ -1,0 +1,1506 @@
+   Phaser v2.3.1-dev | Pixi.js v2.2.8 | WebGL | WebAudio     http://phaser.io ♥♥♥
+P…r.Sound {game: P…r.Game, name: "explosion", key: "explosion", loop: false, markers: Object…}
+rocksize%: 25
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 31, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 21, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 23, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 22, sizeType: "small", velocitySeed: null}
+Object {rockSize: 28, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 29, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 27, sizeType: "small", velocitySeed: null}
+Object {rockSize: 26, sizeType: "small", velocitySeed: null}
+Object {rockSize: 25, sizeType: "small", velocitySeed: null}
+Object {rockSize: 32, sizeType: "small", velocitySeed: null}
+Object {rockSize: 17, sizeType: "small", velocitySeed: null}
+Object {rockSize: 20, sizeType: "small", velocitySeed: null}
+Object {rockSize: 30, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 18, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+Object {rockSize: 24, sizeType: "small", velocitySeed: null}
+Object {rockSize: 19, sizeType: "small", velocitySeed: null}
+Object {rockSize: 16, sizeType: "small", velocitySeed: null}
+before speed: 31
+after speed: -31
+Object {rockSize: 94, sizeType: "large", velocitySeed: -31}
+before speed: 32
+after speed: -32
+Object {rockSize: 101, sizeType: "large", velocitySeed: -32}
+before speed: 27
+after speed: -27
+Object {rockSize: 102, sizeType: "large", velocitySeed: -27}
+before speed: 16
+after speed: 16
+Object {rockSize: 110, sizeType: "large", velocitySeed: 16}
+before speed: 31
+after speed: 31
+Object {rockSize: 97, sizeType: "large", velocitySeed: 31}
+before speed: 27
+after speed: 27
+Object {rockSize: 100, sizeType: "large", velocitySeed: 27}
+before speed: 18
+after speed: 18
+Object {rockSize: 95, sizeType: "large", velocitySeed: 18}
+before speed: 25
+after speed: 25
+Object {rockSize: 101, sizeType: "large", velocitySeed: 25}
+before speed: 24
+after speed: 24
+Object {rockSize: 118, sizeType: "large", velocitySeed: 24}
+before speed: 17
+after speed: -17
+Object {rockSize: 120, sizeType: "large", velocitySeed: -17}
+before speed: 25
+after speed: 25
+Object {rockSize: 110, sizeType: "large", velocitySeed: 25}
+before speed: 22
+after speed: -22
+Object {rockSize: 117, sizeType: "large", velocitySeed: -22}
+before speed: 21
+after speed: 21
+Object {rockSize: 124, sizeType: "large", velocitySeed: 21}
+before speed: 32
+after speed: 32
+Object {rockSize: 108, sizeType: "large", velocitySeed: 32}
+before speed: 30
+after speed: -30
+Object {rockSize: 116, sizeType: "large", velocitySeed: -30}
+before speed: 17
+after speed: 17
+Object {rockSize: 104, sizeType: "large", velocitySeed: 17}
+before speed: 32
+after speed: 32
+Object {rockSize: 115, sizeType: "large", velocitySeed: 32}
+before speed: 24
+after speed: 24
+Object {rockSize: 107, sizeType: "large", velocitySeed: 24}
+before speed: 107
+after speed: 107
+Object {rockSize: 93, sizeType: "large", velocitySeed: 107}
+before speed: 27
+after speed: -27
+Object {rockSize: 104, sizeType: "large", velocitySeed: -27}
+before speed: 18
+after speed: 18
+Object {rockSize: 107, sizeType: "large", velocitySeed: 18}
+before speed: 22
+after speed: -22
+Object {rockSize: 122, sizeType: "large", velocitySeed: -22}
+before speed: 28
+after speed: -28
+Object {rockSize: 118, sizeType: "large", velocitySeed: -28}
+before speed: 31
+after speed: -31
+Object {rockSize: 106, sizeType: "large", velocitySeed: -31}
+before speed: 18
+after speed: 18
+Object {rockSize: 96, sizeType: "large", velocitySeed: 18}
+before speed: 24
+after speed: -24
+Object {rockSize: 118, sizeType: "large", velocitySeed: -24}
+before speed: 24
+after speed: 24
+Object {rockSize: 93, sizeType: "large", velocitySeed: 24}
+before speed: 26
+after speed: -26
+Object {rockSize: 100, sizeType: "large", velocitySeed: -26}
+before speed: 27
+after speed: 27
+Object {rockSize: 102, sizeType: "large", velocitySeed: 27}
+before speed: 27
+after speed: -27
+Object {rockSize: 116, sizeType: "large", velocitySeed: -27}
+before speed: 22
+after speed: -22
+Object {rockSize: 117, sizeType: "large", velocitySeed: -22}
+before speed: 93
+after speed: -93
+Object {rockSize: 118, sizeType: "large", velocitySeed: -93}
+before speed: 27
+after speed: -27
+Object {rockSize: 101, sizeType: "large", velocitySeed: -27}
+before speed: 22
+after speed: 22
+Object {rockSize: 109, sizeType: "large", velocitySeed: 22}
+before speed: 24
+after speed: -24
+Object {rockSize: 126, sizeType: "large", velocitySeed: -24}
+before speed: 24
+after speed: -24
+Object {rockSize: 101, sizeType: "large", velocitySeed: -24}
+before speed: 25
+after speed: -25
+Object {rockSize: 119, sizeType: "large", velocitySeed: -25}
+before speed: 25
+after speed: 25
+Object {rockSize: 119, sizeType: "large", velocitySeed: 25}
+before speed: 32
+after speed: 32
+Object {rockSize: 94, sizeType: "large", velocitySeed: 32}
+before speed: 24
+after speed: 24
+Object {rockSize: 118, sizeType: "large", velocitySeed: 24}
+before speed: 16
+after speed: 16
+Object {rockSize: 119, sizeType: "large", velocitySeed: 16}
+before speed: 17
+after speed: -17
+Object {rockSize: 121, sizeType: "large", velocitySeed: -17}
+before speed: 22
+after speed: 22
+Object {rockSize: 112, sizeType: "large", velocitySeed: 22}
+before speed: 27
+after speed: -27
+Object {rockSize: 117, sizeType: "large", velocitySeed: -27}
+before speed: 19
+after speed: -19
+Object {rockSize: 99, sizeType: "large", velocitySeed: -19}
+before speed: 27
+after speed: -27
+Object {rockSize: 110, sizeType: "large", velocitySeed: -27}
+before speed: 22
+after speed: 22
+Object {rockSize: 99, sizeType: "large", velocitySeed: 22}
+before speed: 18
+after speed: 18
+Object {rockSize: 118, sizeType: "large", velocitySeed: 18}
+before speed: 30
+after speed: -30
+Object {rockSize: 99, sizeType: "large", velocitySeed: -30}
+before speed: 24
+after speed: -24
+Object {rockSize: 104, sizeType: "large", velocitySeed: -24}
+before speed: 19
+after speed: 19
+Object {rockSize: 119, sizeType: "large", velocitySeed: 19}
+before speed: 22
+after speed: 22
+Object {rockSize: 97, sizeType: "large", velocitySeed: 22}
+before speed: 31
+after speed: 31
+Object {rockSize: 116, sizeType: "large", velocitySeed: 31}
+before speed: 30
+after speed: -30
+Object {rockSize: 125, sizeType: "large", velocitySeed: -30}
+before speed: 27
+after speed: 27
+Object {rockSize: 113, sizeType: "large", velocitySeed: 27}
+before speed: 28
+after speed: -28
+Object {rockSize: 90, sizeType: "large", velocitySeed: -28}
+before speed: 26
+after speed: 26
+Object {rockSize: 113, sizeType: "large", velocitySeed: 26}
+before speed: 31
+after speed: 31
+Object {rockSize: 99, sizeType: "large", velocitySeed: 31}
+before speed: 32
+after speed: -32
+Object {rockSize: 106, sizeType: "large", velocitySeed: -32}
+before speed: 32
+after speed: -32
+Object {rockSize: 121, sizeType: "large", velocitySeed: -32}
+before speed: 22
+after speed: 22
+Object {rockSize: 117, sizeType: "large", velocitySeed: 22}
+before speed: 20
+after speed: 20
+Object {rockSize: 95, sizeType: "large", velocitySeed: 20}
+before speed: 19
+after speed: 19
+Object {rockSize: 93, sizeType: "large", velocitySeed: 19}
+before speed: 102
+after speed: 102
+Object {rockSize: 101, sizeType: "large", velocitySeed: 102}
+before speed: 23
+after speed: -23
+Object {rockSize: 117, sizeType: "large", velocitySeed: -23}
+before speed: 27
+after speed: -27
+Object {rockSize: 119, sizeType: "large", velocitySeed: -27}
+before speed: 18
+after speed: 18
+Object {rockSize: 101, sizeType: "large", velocitySeed: 18}
+before speed: 32
+after speed: 32
+Object {rockSize: 120, sizeType: "large", velocitySeed: 32}
+before speed: 27
+after speed: -27
+Object {rockSize: 98, sizeType: "large", velocitySeed: -27}
+before speed: 24
+after speed: 24
+Object {rockSize: 116, sizeType: "large", velocitySeed: 24}
+before speed: 23
+after speed: 23
+Object {rockSize: 107, sizeType: "large", velocitySeed: 23}
+before speed: 20
+after speed: -20
+Object {rockSize: 93, sizeType: "large", velocitySeed: -20}
+before speed: 27
+after speed: -27
+Object {rockSize: 99, sizeType: "large", velocitySeed: -27}
+before speed: 22
+after speed: 22
+Object {rockSize: 100, sizeType: "large", velocitySeed: 22}
+before speed: 23
+after speed: -23
+Object {rockSize: 94, sizeType: "large", velocitySeed: -23}
+before speed: 32
+after speed: 32
+Object {rockSize: 95, sizeType: "large", velocitySeed: 32}
+before speed: 25
+after speed: -25
+Object {rockSize: 121, sizeType: "large", velocitySeed: -25}
+before speed: 22
+after speed: -22
+Object {rockSize: 120, sizeType: "large", velocitySeed: -22}
+before speed: 16
+after speed: -16
+Object {rockSize: 115, sizeType: "large", velocitySeed: -16}
+before speed: 31
+after speed: -31
+Object {rockSize: 92, sizeType: "large", velocitySeed: -31}
+before speed: 23
+after speed: 23
+Object {rockSize: 105, sizeType: "large", velocitySeed: 23}
+before speed: 18
+after speed: -18
+Object {rockSize: 117, sizeType: "large", velocitySeed: -18}
+before speed: 32
+after speed: 32
+Object {rockSize: 90, sizeType: "large", velocitySeed: 32}
+before speed: 21
+after speed: 21
+Object {rockSize: 120, sizeType: "large", velocitySeed: 21}
+before speed: 32
+after speed: -32
+Object {rockSize: 92, sizeType: "large", velocitySeed: -32}
+before speed: 24
+after speed: 24
+Object {rockSize: 121, sizeType: "large", velocitySeed: 24}
+before speed: 30
+after speed: -30
+Object {rockSize: 92, sizeType: "large", velocitySeed: -30}
+before speed: 24
+after speed: -24
+Object {rockSize: 110, sizeType: "large", velocitySeed: -24}
+before speed: 18
+after speed: 18
+Object {rockSize: 98, sizeType: "large", velocitySeed: 18}
+before speed: 32
+after speed: -32
+Object {rockSize: 108, sizeType: "large", velocitySeed: -32}
+before speed: 27
+after speed: 27
+Object {rockSize: 127, sizeType: "large", velocitySeed: 27}
+before speed: 19
+after speed: -19
+Object {rockSize: 106, sizeType: "large", velocitySeed: -19}
+before speed: 29
+after speed: 29
+Object {rockSize: 100, sizeType: "large", velocitySeed: 29}
+before speed: 29
+after speed: -29
+Object {rockSize: 121, sizeType: "large", velocitySeed: -29}
+before speed: 20
+after speed: 20
+Object {rockSize: 101, sizeType: "large", velocitySeed: 20}
+before speed: 16
+after speed: -16
+Object {rockSize: 93, sizeType: "large", velocitySeed: -16}
+before speed: 17
+after speed: 17
+Object {rockSize: 106, sizeType: "large", velocitySeed: 17}
+before speed: 32
+after speed: 32
+Object {rockSize: 126, sizeType: "large", velocitySeed: 32}
+before speed: 27
+after speed: 27
+Object {rockSize: 92, sizeType: "large", velocitySeed: 27}
+before speed: 99
+after speed: -99
+Object {rockSize: 95, sizeType: "large", velocitySeed: -99}
+before speed: 17
+after speed: -17
+Object {rockSize: 127, sizeType: "large", velocitySeed: -17}
+before speed: 32
+after speed: -32
+Object {rockSize: 93, sizeType: "large", velocitySeed: -32}
+before speed: 30
+after speed: 30
+Object {rockSize: 126, sizeType: "large", velocitySeed: 30}
+before speed: 32
+after speed: 32
+Object {rockSize: 109, sizeType: "large", velocitySeed: 32}
+before speed: 29
+after speed: 29
+Object {rockSize: 111, sizeType: "large", velocitySeed: 29}
+before speed: 30
+after speed: 30
+Object {rockSize: 103, sizeType: "large", velocitySeed: 30}
+before speed: 32
+after speed: 32
+Object {rockSize: 98, sizeType: "large", velocitySeed: 32}
+before speed: 30
+after speed: -30
+Object {rockSize: 103, sizeType: "large", velocitySeed: -30}
+before speed: 21
+after speed: 21
+Object {rockSize: 110, sizeType: "large", velocitySeed: 21}
+before speed: 32
+after speed: -32
+Object {rockSize: 122, sizeType: "large", velocitySeed: -32}
+before speed: 16
+after speed: -16
+Object {rockSize: 125, sizeType: "large", velocitySeed: -16}
+before speed: 26
+after speed: -26
+Object {rockSize: 114, sizeType: "large", velocitySeed: -26}
+before speed: 19
+after speed: -19
+Object {rockSize: 96, sizeType: "large", velocitySeed: -19}
+before speed: 27
+after speed: -27
+Object {rockSize: 109, sizeType: "large", velocitySeed: -27}
+before speed: 16
+after speed: 16
+Object {rockSize: 115, sizeType: "large", velocitySeed: 16}
+before speed: 118
+after speed: -118
+Object {rockSize: 123, sizeType: "large", velocitySeed: -118}
+before speed: 31
+after speed: 31
+Object {rockSize: 117, sizeType: "large", velocitySeed: 31}
+before speed: 30
+after speed: -30
+Object {rockSize: 127, sizeType: "large", velocitySeed: -30}
+before speed: 19
+after speed: 19
+Object {rockSize: 95, sizeType: "large", velocitySeed: 19}
+before speed: 24
+after speed: 24
+Object {rockSize: 112, sizeType: "large", velocitySeed: 24}
+before speed: 17
+after speed: -17
+Object {rockSize: 113, sizeType: "large", velocitySeed: -17}
+before speed: 29
+after speed: 29
+Object {rockSize: 99, sizeType: "large", velocitySeed: 29}
+before speed: 24
+after speed: 24
+Object {rockSize: 125, sizeType: "large", velocitySeed: 24}
+before speed: 28
+after speed: -28
+Object {rockSize: 111, sizeType: "large", velocitySeed: -28}
+before speed: 23
+after speed: 23
+Object {rockSize: 118, sizeType: "large", velocitySeed: 23}
+before speed: 19
+after speed: -19
+Object {rockSize: 114, sizeType: "large", velocitySeed: -19}
+before speed: 18
+after speed: 18
+Object {rockSize: 97, sizeType: "large", velocitySeed: 18}
+before speed: 17
+after speed: -17
+Object {rockSize: 110, sizeType: "large", velocitySeed: -17}
+before speed: 16
+after speed: -16
+Object {rockSize: 99, sizeType: "large", velocitySeed: -16}
+before speed: 106
+after speed: 106
+Object {rockSize: 95, sizeType: "large", velocitySeed: 106}
+before speed: 32
+after speed: -32
+Object {rockSize: 103, sizeType: "large", velocitySeed: -32}
+before speed: 122
+after speed: -122
+Object {rockSize: 128, sizeType: "large", velocitySeed: -122}
+before speed: 109
+after speed: -109
+Object {rockSize: 105, sizeType: "large", velocitySeed: -109}
+before speed: 20
+after speed: 20
+Object {rockSize: 111, sizeType: "large", velocitySeed: 20}
+before speed: 26
+after speed: 26
+Object {rockSize: 100, sizeType: "large", velocitySeed: 26}
+before speed: 27
+after speed: -27
+Object {rockSize: 110, sizeType: "large", velocitySeed: -27}
+before speed: 22
+after speed: 22
+Object {rockSize: 124, sizeType: "large", velocitySeed: 22}
+before speed: 110
+after speed: 110
+Object {rockSize: 118, sizeType: "large", velocitySeed: 110}
+before speed: 16
+after speed: 16
+Object {rockSize: 110, sizeType: "large", velocitySeed: 16}
+before speed: 31
+after speed: -31
+Object {rockSize: 117, sizeType: "large", velocitySeed: -31}
+before speed: 17
+after speed: 17
+Object {rockSize: 110, sizeType: "large", velocitySeed: 17}
+before speed: 22
+after speed: 22
+Object {rockSize: 123, sizeType: "large", velocitySeed: 22}
+before speed: 25
+after speed: -25
+Object {rockSize: 123, sizeType: "large", velocitySeed: -25}
+before speed: 32
+after speed: 32
+Object {rockSize: 97, sizeType: "large", velocitySeed: 32}
+before speed: 26
+after speed: 26
+Object {rockSize: 105, sizeType: "large", velocitySeed: 26}
+before speed: 115
+after speed: 115
+Object {rockSize: 90, sizeType: "large", velocitySeed: 115}
+before speed: 16
+after speed: 16
+Object {rockSize: 123, sizeType: "large", velocitySeed: 16}
+before speed: 24
+after speed: 24
+Object {rockSize: 122, sizeType: "large", velocitySeed: 24}
+before speed: 31
+after speed: 31
+Object {rockSize: 125, sizeType: "large", velocitySeed: 31}
+before speed: 16
+after speed: 16
+Object {rockSize: 110, sizeType: "large", velocitySeed: 16}
+before speed: 29
+after speed: 29
+Object {rockSize: 104, sizeType: "large", velocitySeed: 29}
+before speed: 17
+after speed: -17
+Object {rockSize: 90, sizeType: "large", velocitySeed: -17}
+before speed: 90
+after speed: -90
+Object {rockSize: 116, sizeType: "large", velocitySeed: -90}
+before speed: 26
+after speed: 26
+Object {rockSize: 100, sizeType: "large", velocitySeed: 26}
+before speed: 21
+after speed: 21
+Object {rockSize: 126, sizeType: "large", velocitySeed: 21}
+before speed: 27
+after speed: -27
+Object {rockSize: 125, sizeType: "large", velocitySeed: -27}
+before speed: 25
+after speed: 25
+Object {rockSize: 92, sizeType: "large", velocitySeed: 25}
+before speed: 25
+after speed: -25
+Object {rockSize: 99, sizeType: "large", velocitySeed: -25}
+before speed: 100
+after speed: -100
+Object {rockSize: 113, sizeType: "large", velocitySeed: -100}
+before speed: 32
+after speed: -32
+Object {rockSize: 122, sizeType: "large", velocitySeed: -32}
+before speed: 18
+after speed: 18
+Object {rockSize: 114, sizeType: "large", velocitySeed: 18}
+before speed: 27
+after speed: 27
+Object {rockSize: 99, sizeType: "large", velocitySeed: 27}
+before speed: 32
+after speed: -32
+Object {rockSize: 121, sizeType: "large", velocitySeed: -32}
+before speed: 19
+after speed: 19
+Object {rockSize: 113, sizeType: "large", velocitySeed: 19}
+before speed: 21
+after speed: -21
+Object {rockSize: 122, sizeType: "large", velocitySeed: -21}
+before speed: 30
+after speed: -30
+Object {rockSize: 103, sizeType: "large", velocitySeed: -30}
+before speed: 19
+after speed: -19
+Object {rockSize: 110, sizeType: "large", velocitySeed: -19}
+before speed: 23
+after speed: 23
+Object {rockSize: 123, sizeType: "large", velocitySeed: 23}
+before speed: 127
+after speed: 127
+Object {rockSize: 90, sizeType: "large", velocitySeed: 127}
+before speed: 22
+after speed: 22
+Object {rockSize: 108, sizeType: "large", velocitySeed: 22}
+before speed: 19
+after speed: 19
+Object {rockSize: 119, sizeType: "large", velocitySeed: 19}
+before speed: 28
+after speed: -28
+Object {rockSize: 125, sizeType: "large", velocitySeed: -28}
+before speed: 97
+after speed: 97
+Object {rockSize: 126, sizeType: "large", velocitySeed: 97}
+before speed: 31
+after speed: -31
+Object {rockSize: 118, sizeType: "large", velocitySeed: -31}
+before speed: 25
+after speed: -25
+Object {rockSize: 105, sizeType: "large", velocitySeed: -25}
+before speed: 28
+after speed: -28
+Object {rockSize: 95, sizeType: "large", velocitySeed: -28}
+before speed: 115
+after speed: -115
+Object {rockSize: 94, sizeType: "large", velocitySeed: -115}
+before speed: 29
+after speed: 29
+Object {rockSize: 117, sizeType: "large", velocitySeed: 29}
+before speed: 32
+after speed: 32
+Object {rockSize: 104, sizeType: "large", velocitySeed: 32}
+before speed: 29
+after speed: -29
+Object {rockSize: 90, sizeType: "large", velocitySeed: -29}
+before speed: 31
+after speed: -31
+Object {rockSize: 106, sizeType: "large", velocitySeed: -31}
+before speed: 20
+after speed: -20
+Object {rockSize: 126, sizeType: "large", velocitySeed: -20}
+before speed: 24
+after speed: 24
+Object {rockSize: 99, sizeType: "large", velocitySeed: 24}
+before speed: 115
+after speed: 115
+Object {rockSize: 114, sizeType: "large", velocitySeed: 115}
+before speed: 17
+after speed: 17
+Object {rockSize: 100, sizeType: "large", velocitySeed: 17}
+before speed: 17
+after speed: -17
+Object {rockSize: 121, sizeType: "large", velocitySeed: -17}
+before speed: 18
+after speed: -18
+Object {rockSize: 120, sizeType: "large", velocitySeed: -18}
+before speed: 94
+after speed: 94
+Object {rockSize: 112, sizeType: "large", velocitySeed: 94}
+before speed: 21
+after speed: -21
+Object {rockSize: 108, sizeType: "large", velocitySeed: -21}
+before speed: 28
+after speed: 28
+Object {rockSize: 98, sizeType: "large", velocitySeed: 28}
+before speed: 32
+after speed: 32
+Object {rockSize: 119, sizeType: "large", velocitySeed: 32}
+before speed: 98
+after speed: -98
+Object {rockSize: 126, sizeType: "large", velocitySeed: -98}
+before speed: 100
+after speed: 100
+Object {rockSize: 118, sizeType: "large", velocitySeed: 100}
+before speed: 17
+after speed: -17
+Object {rockSize: 102, sizeType: "large", velocitySeed: -17}
+before speed: 20
+after speed: -20
+Object {rockSize: 114, sizeType: "large", velocitySeed: -20}
+before speed: 17
+after speed: 17
+Object {rockSize: 102, sizeType: "large", velocitySeed: 17}
+before speed: 24
+after speed: -24
+Object {rockSize: 91, sizeType: "large", velocitySeed: -24}
+before speed: 32
+after speed: 32
+Object {rockSize: 96, sizeType: "large", velocitySeed: 32}
+before speed: 32
+after speed: -32
+Object {rockSize: 91, sizeType: "large", velocitySeed: -32}
+before speed: 29
+after speed: -29
+Object {rockSize: 115, sizeType: "large", velocitySeed: -29}
+before speed: 23
+after speed: -23
+Object {rockSize: 119, sizeType: "large", velocitySeed: -23}
+before speed: 32
+after speed: -32
+Object {rockSize: 98, sizeType: "large", velocitySeed: -32}
+before speed: 25
+after speed: -25
+Object {rockSize: 120, sizeType: "large", velocitySeed: -25}
+before speed: 20
+after speed: 20
+Object {rockSize: 115, sizeType: "large", velocitySeed: 20}
+before speed: 30
+after speed: -30
+Object {rockSize: 90, sizeType: "large", velocitySeed: -30}
+before speed: 29
+after speed: 29
+Object {rockSize: 91, sizeType: "large", velocitySeed: 29}
+before speed: 19
+after speed: 19
+Object {rockSize: 120, sizeType: "large", velocitySeed: 19}
+before speed: 120
+after speed: -120
+Object {rockSize: 105, sizeType: "large", velocitySeed: -120}
+before speed: 24
+after speed: -24
+Object {rockSize: 126, sizeType: "large", velocitySeed: -24}
+before speed: 20
+after speed: 20
+Object {rockSize: 127, sizeType: "large", velocitySeed: 20}
+before speed: 20
+after speed: -20
+Object {rockSize: 90, sizeType: "large", velocitySeed: -20}
+before speed: 23
+after speed: -23
+Object {rockSize: 127, sizeType: "large", velocitySeed: -23}
+before speed: 32
+after speed: -32
+Object {rockSize: 125, sizeType: "large", velocitySeed: -32}
+before speed: 32
+after speed: 32
+Object {rockSize: 109, sizeType: "large", velocitySeed: 32}
+before speed: 22
+after speed: 22
+Object {rockSize: 109, sizeType: "large", velocitySeed: 22}
+before speed: 22
+after speed: -22
+Object {rockSize: 115, sizeType: "large", velocitySeed: -22}
+before speed: 32
+after speed: 32
+Object {rockSize: 122, sizeType: "large", velocitySeed: 32}
+before speed: 24
+after speed: 24
+Object {rockSize: 125, sizeType: "large", velocitySeed: 24}
+before speed: 32
+after speed: -32
+Object {rockSize: 91, sizeType: "large", velocitySeed: -32}
+before speed: 21
+after speed: -21
+Object {rockSize: 126, sizeType: "large", velocitySeed: -21}
+before speed: 23
+after speed: -23
+Object {rockSize: 122, sizeType: "large", velocitySeed: -23}
+before speed: 30
+after speed: -30
+Object {rockSize: 90, sizeType: "large", velocitySeed: -30}
+before speed: 18
+after speed: 18
+Object {rockSize: 106, sizeType: "large", velocitySeed: 18}
+before speed: 22
+after speed: 22
+Object {rockSize: 115, sizeType: "large", velocitySeed: 22}
+before speed: 21
+after speed: -21
+Object {rockSize: 119, sizeType: "large", velocitySeed: -21}
+before speed: 126
+after speed: -126
+Object {rockSize: 98, sizeType: "large", velocitySeed: -126}
+before speed: 24
+after speed: 24
+Object {rockSize: 100, sizeType: "large", velocitySeed: 24}
+before speed: 29
+after speed: -29
+Object {rockSize: 126, sizeType: "large", velocitySeed: -29}
+before speed: 19
+after speed: 19
+Object {rockSize: 117, sizeType: "large", velocitySeed: 19}
+before speed: 116
+after speed: 116
+Object {rockSize: 102, sizeType: "large", velocitySeed: 116}
+before speed: 100
+after speed: 100
+Object {rockSize: 112, sizeType: "large", velocitySeed: 100}
+before speed: 26
+after speed: -26
+Object {rockSize: 127, sizeType: "large", velocitySeed: -26}
+before speed: 27
+after speed: -27
+Object {rockSize: 112, sizeType: "large", velocitySeed: -27}
+before speed: 23
+after speed: 23
+Object {rockSize: 123, sizeType: "large", velocitySeed: 23}
+before speed: 18
+after speed: 18
+Object {rockSize: 127, sizeType: "large", velocitySeed: 18}
+before speed: 24
+after speed: 24
+Object {rockSize: 122, sizeType: "large", velocitySeed: 24}
+before speed: 19
+after speed: -19
+Object {rockSize: 122, sizeType: "large", velocitySeed: -19}
+before speed: 24
+after speed: 24
+Object {rockSize: 127, sizeType: "large", velocitySeed: 24}
+before speed: 16
+after speed: -16
+Object {rockSize: 109, sizeType: "large", velocitySeed: -16}
+before speed: 19
+after speed: -19
+Object {rockSize: 90, sizeType: "large", velocitySeed: -19}
+before speed: 30
+after speed: -30
+Object {rockSize: 116, sizeType: "large", velocitySeed: -30}
+before speed: 17
+after speed: 17
+Object {rockSize: 109, sizeType: "large", velocitySeed: 17}
+before speed: 16
+after speed: 16
+Object {rockSize: 122, sizeType: "large", velocitySeed: 16}
+before speed: 32
+after speed: 32
+Object {rockSize: 103, sizeType: "large", velocitySeed: 32}
+before speed: 30
+after speed: -30
+Object {rockSize: 127, sizeType: "large", velocitySeed: -30}
+before speed: 90
+after speed: 90
+Object {rockSize: 97, sizeType: "large", velocitySeed: 90}
+before speed: 29
+after speed: -29
+Object {rockSize: 92, sizeType: "large", velocitySeed: -29}
+before speed: 23
+after speed: 23
+Object {rockSize: 90, sizeType: "large", velocitySeed: 23}
+before speed: 19
+after speed: 19
+Object {rockSize: 107, sizeType: "large", velocitySeed: 19}
+before speed: 22
+after speed: -22
+Object {rockSize: 107, sizeType: "large", velocitySeed: -22}
+[Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object…]
+24.8
+Uncaught TypeError: Cannot read property 'apply' of undefined
