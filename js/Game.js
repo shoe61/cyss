@@ -18,6 +18,10 @@ var bullets;
 var bulletTime = 0;
 //endo ship and bullets stuff
 
+// The ratio of large asteroids (0-100)
+var astroidarray = [];
+var ARRAY_NUM_TOTAL = 1000;
+
 
 //title screen
 SpaceHipster.Game = function(){};
@@ -207,12 +211,15 @@ if (cursors.up.isDown)
             for(var x = 0; x < Math.round(ARRAY_NUM_TOTAL * (rock_size_percent/100)); x++)
                 this.pushRocksToArray("large");
         }
-    },
+},
 
     pushRocksToArray: function(size){
+       console.log("pushRocksToArray: " + size)
+
         var rockType = {
-    sizePick: null,
-    sizeType: ""
+            sizePick: null,
+            sizeType: "",
+            velocityRock: null
             };
         //if wanting to push big rock object to array
         if (size == "large"){
@@ -220,17 +227,20 @@ if (cursors.up.isDown)
             rockType.sizePick = this.game.rnd.integerInRange(90, 128);
             //tags rock as being large
             rockType.sizeType = "large";
-            //pushes it to the array of astroids
+
+            //Temp push to populate velocity (based on weighted array)
             astroidarray.push(rockType);
         }
         //if wanting to push small rock object to array
         else{
             rockType.sizePick = this.game.rnd.integerInRange(16, 32);
             rockType.sizeType = "small"
+
+            //Temp push to populate velocity (based on weighted array)
             astroidarray.push(rockType);
         }
-       // console.log(rockType);
-    },
+        console.log(rockType);
+},
 
   generateCollectables: function() {
     this.collectables = this.game.add.group();
@@ -254,20 +264,35 @@ if (cursors.up.isDown)
 
     generateAsteriod: function(size) {
         var asteriod;
-        //random large size ratio generator(0-100)
-        var sizeseed = this.game.rnd.integerInRange(0-100);
-        if(sizeseed == 0)
-            astroidarray = this.game.rnd.integerInRange(16, 47);
+        //copy an asteroid favoring smaller
+        var chosenastroid = this.game.rnd.weightedPick(astroidarray);
 
       // MAKE THE ASTEROID
       asteriod = this.asteroids.create(this.game.world.randomX, this.game.world.randomY, 'rock');
         //scale asteroid by picking from arrayindex and grabbing its size data
-        var pik = this.game.rnd.weightedPick(astroidarray).sizePick / 1000 * 20;
+        var pik = chosenastroid.sizePick / 1000 * 20;
       asteriod.scale.setTo(pik);
 
+
+        if(chosenastroid.sizeType == "large")
+            chosenastroid.velocityRock = this.game.rnd.weightedPick(astroidarray).sizePick *.9;
+        else
+        {
+            //if small weigh toward higher speeds
+            astroidarray.reverse();
+            chosenastroid.velocityRock = this.game.rnd.weightedPick(astroidarray).sizePick * 1.2 ;
+            console.log("astro reverse small: " + chosenastroid.velocityRock);
+            //Put back in order
+            astroidarray.reverse();
+        }
+
       //physics properties
-      asteriod.body.velocity.x = this.game.rnd.integerInRange(-20, 20);
-      asteriod.body.velocity.y = this.game.rnd.integerInRange(-20, 20);
+        //make the velocity either positive or negative
+      chosenastroid.velocityRock *= this.game.rnd.pick([-1,1])
+      asteriod.body.velocity.x = chosenastroid.velocityRock;
+        //make the velocity either positive or negative
+      chosenastroid.velocityRock *= this.game.rnd.pick([-1,1])
+asteriod.body.velocity.y = chosenastroid.velocityRock;
       //asteriod.body.immovable = true;
       //asteriod.body.collideWorldBounds = true;
       this.asteroids.setAll('body.collideWorldBounds', true);
@@ -278,7 +303,7 @@ if (cursors.up.isDown)
         //console.log(asteriod.height)
       },
     
-    shootAsteroid: function(player, asteroid) {
+    shootAsteroid: function(bullets, asteroids) {
     //play explosion sound
     this.explosion.play();
         
