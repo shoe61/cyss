@@ -75,9 +75,9 @@ SpaceHipster.Game.prototype = {
     this.player.body.collideWorldBounds = true; 
 
       //initializing the physics of asteroids
-      this.asteroids = this.game.add.group();
-      //enable physics in them
-      this.asteroids.enableBody = true;
+      this.asteroids = this.game.add.physicsGroup(Phaser.Physics.ARCADE);
+      
+      
 
     //player initial score of zero
     this.playerScore = 0;
@@ -153,7 +153,10 @@ if (cursors.up.isDown)
     this.game.physics.arcade.overlap(this.player, this.collectables, this.collect, null, this);
       
     //collision of bullet and asteroid
-    this.game.physics.arcade.collide(this.bullets, this.asteroids, null, this);
+    this.game.physics.arcade.collide(this.bullets, this.asteroids, this.shootAsteroid, null, this);
+    console.log("shot asteroid") + (this.shootAsteroid)
+    
+    this.game.physics.arcade.collide(this.asteroids);
       
    
   },
@@ -164,7 +167,7 @@ if (cursors.up.isDown)
         if (this.game.time.now > bulletTime){
              bullet = bullets.getFirstExists(false);
              if (bullet){
-            console.log("bullet = ") + (bullet);
+            //console.log("bullet = ") + (bullet);
             //play the sound
             this.fireSound.play();
             //  And fire it
@@ -265,9 +268,12 @@ if (cursors.up.isDown)
       //physics properties
       asteriod.body.velocity.x = this.game.rnd.integerInRange(-20, 20);
       asteriod.body.velocity.y = this.game.rnd.integerInRange(-20, 20);
-      asteriod.body.immovable = true;
-      asteriod.body.collideWorldBounds = true;
-
+      //asteriod.body.immovable = true;
+      //asteriod.body.collideWorldBounds = true;
+      this.asteroids.setAll('body.collideWorldBounds', true);
+      this.asteroids.setAll('body.bounce.x', 1);
+	  this.asteroids.setAll('body.bounce.y', 1);
+        
         //DEBUG
         //console.log(asteriod.height)
       },
