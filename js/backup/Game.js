@@ -1,25 +1,55 @@
 var SpaceHipster = SpaceHipster || {};
 
-// Declare difficulty object
-var SkillLevel = {
-    // Define SkillLevel parameters;
-    easy: 2550,
-    medium: 50150,
-    hard: 150250,
-    choice: null
-    };
+// Declare difficulty variable
+var skillLevel;
+// Define skilllevel parameters;
+var Easy = 2550;
+var Medium = 50150;
+var Hard = 150250;
 // The ratio of large asteroids (0-100)
 var astroidarray = [];
 var ARRAY_NUM_TOTAL = 1000;
+
+//next five lines necessary for ship movement and bullets:
+var sprite;
+var cursors;
+var bullet;
+var bullets;
+var bulletTime = 0;
+//endo ship and bullets stuff
+
 
 //title screen
 SpaceHipster.Game = function(){};
 
 SpaceHipster.Game.prototype = {
-  create: function() {
+ 
+    
+    create: function() {
 
   	//set world dimensions
     this.game.world.setBounds(0, 0, 1920, 1920);
+      
+    //added for ship and bullet
+    //  We need arcade physics
+    this.game.physics.startSystem(Phaser.Physics.ARCADE);
+    //  This will run in Canvas mode, so let's gain a little speed and display
+    this.game.renderer.clearBeforeRender = false;
+    this.game.renderer.roundPixels = true;
+    //  Our ships bullets
+    bullets = this.game.add.group();
+    bullets.enableBody = true;
+    bullets.physicsBodyType = Phaser.Physics.ARCADE;
+    //  All 40 of them
+    bullets.createMultiple(40, 'bullet');
+    bullets.setAll('anchor.x', 0.5);
+    bullets.setAll('anchor.y', 0.5);
+    //endo ship and bullet stuff 
+      
+    //added ship and bullet controls: game input
+    cursors = this.game.input.keyboard.createCursorKeys();
+    this.game.input.keyboard.addKeyCapture([ Phaser.Keyboard.SPACEBAR ]);
+    //endo ship and bullet stuff
 
     //background
     this.background = this.game.add.tileSprite(0, 0, this.game.world.width, this.game.world.height, 'space');
@@ -27,8 +57,15 @@ SpaceHipster.Game.prototype = {
     //create player
     this.player = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'playership');
     this.player.scale.setTo(2);
-    this.player.animations.add('fly', [0, 1, 2, 3], 5, true)
-    this.player.animations.play('fly');
+    this.player.anchor.set(0.5);
+    
+    //enable player physics
+    this.game.physics.arcade.enable(this.player);
+    this.player.body.drag.set(100);
+    this.player.body.maxVelocity.set(500);
+      
+    // this.playerSpeed = 120; (replaced by ship and bullet stuff)
+    this.player.body.collideWorldBounds = true; 
 
       //initializing the physics of asteroids
       this.asteroids = this.game.add.group();
@@ -38,10 +75,7 @@ SpaceHipster.Game.prototype = {
     //player initial score of zero
     this.playerScore = 0;
 
-    //enable player physics
-    this.game.physics.arcade.enable(this.player);
-    this.playerSpeed = 120;
-    this.player.body.collideWorldBounds = true;
+    
 
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
@@ -66,12 +100,74 @@ SpaceHipster.Game.prototype = {
     // every 10 secs process generateAsteroid
     this.game.time.events.loop(500, this.generateAsteriod, this);
   },
+    
+    
+    
+    
+    
+    
   update: function() {
-    if(this.game.input.activePointer.justPressed()) {
-
+    /*if(this.game.input.activePointer.justPressed()) {
       //move on the direction of the input
       this.game.physics.arcade.moveToPointer(this.player, this.playerSpeed);
+    }*/
+      
+if (cursors.up.isDown)
+    {
+        this.game.physics.arcade.accelerationFromRotation(this.player.rotation, 200, this.player.body.acceleration);
     }
+    else
+    {
+        this.player.body.acceleration.set(0);
+    }
+
+    if (cursors.left.isDown)
+    {
+        this.player.body.angularVelocity = -300;
+    }
+    else if (cursors.right.isDown)
+    {
+        this.player.body.angularVelocity = 300;
+    }
+    else
+    {
+        this.player.body.angularVelocity = 0;
+    }
+      
+    if (this.game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR))
+    {
+        fireBullet();
+    }
+      
+    
+      
+    function fireBullet () {        
+       
+    if (this.game.time.now > bulletTime)
+        {
+            bullet = bullets.getFirstExists(false);
+
+            if (bullet)
+            {
+                bullet.reset(sprite.body.x + 16, sprite.body.y + 16);
+                bullet.lifespan = 2000;
+                bullet.rotation = sprite.rotation;
+                game.physics.arcade.velocityFromRotation(sprite.rotation, 400, bullet.body.velocity);
+                bulletTime = this.game.time.now + 50;
+            }
+        }
+    }
+        
+
+
+
+    
+ 
+      
+      
+      
+      
+      
 
     //collision between player and asteroids
     this.game.physics.arcade.collide(this.player, this.asteroids, this.hitAsteroid, null, this);
@@ -107,12 +203,9 @@ SpaceHipster.Game.prototype = {
     },
 
     pushRocksToArray: function(size){
-       console.log("pushRocksToArray: " + size)
-
         var rockType = {
-        sizePick: null,
-        sizeType: "",
-        velocityRock: null
+    sizePick: null,
+    sizeType: ""
             };
         //if wanting to push big rock object to array
         if (size == "large"){
@@ -120,20 +213,6 @@ SpaceHipster.Game.prototype = {
             rockType.sizePick = this.game.rnd.integerInRange(90, 128);
             //tags rock as being large
             rockType.sizeType = "large";
-
-            //Temp push to populate velocity (based on weighted array)
-            astroidarray.push(rockType);
-
-            //VELOCITY
-            //since smaller numbers are in front of array use these as slower speeds
-            rockType.velocityRock = this.game.rnd.weightedPick(astroidarray).sizePick;
-            console.log("before speed: " + rockType.velocityRock);
-            //make the velocity either positive or negative
-            rockType.velocityRock *= this.game.rnd.pick([-1,1])
-            console.log("after speed: " + rockType.velocityRock);
-
-            //Revert temp push
-            astroidarray.pop();
             //pushes it to the array of astroids
             astroidarray.push(rockType);
         }
@@ -141,26 +220,6 @@ SpaceHipster.Game.prototype = {
         else{
             rockType.sizePick = this.game.rnd.integerInRange(16, 32);
             rockType.sizeType = "small"
-
-            //Temp push to populate velocity (based on weighted array)
-            astroidarray.push(rockType);
-
-            //VELOCITY
-            //since higher numbers are in back of array use these as faster speeds
-            //reverse the array to get higher values to front
-            astroidarray.reverse();
-
-            rockType.velocityRock = this.game.rnd.weightedPick(astroidarray).sizePick;
-            console.log("before speed: " + rockType.velocityRock);
-            //make the velocity either positive or negative
-            rockType.velocityRock *= this.game.rnd.pick([-1,1])
-            console.log("after speed: " + rockType.velocityRock);
-
-            //put array to original order
-            astroidarray.reverse();
-            //Revert temp push
-            astroidarray.pop();
-            //pushes it to the array of astroids
             astroidarray.push(rockType);
         }
         console.log(rockType);
@@ -188,18 +247,20 @@ SpaceHipster.Game.prototype = {
 
     generateAsteriod: function(size) {
         var asteriod;
-        //copy an asteroid favoring smaller
-        var chosenastroid = this.game.rnd.weightedPick(astroidarray);
+        //random large size ratio generator(0-100)
+        var sizeseed = this.game.rnd.integerInRange(0-100);
+        if(sizeseed == 0)
+            astroidarray = this.game.rnd.integerInRange(16, 47);
 
       // MAKE THE ASTEROID
       asteriod = this.asteroids.create(this.game.world.randomX, this.game.world.randomY, 'rock');
         //scale asteroid by picking from arrayindex and grabbing its size data
-        var pik = chosenastroid.sizePick / 1000 * 20;
+        var pik = this.game.rnd.weightedPick(astroidarray).sizePick / 1000 * 20;
       asteriod.scale.setTo(pik);
 
       //physics properties
-      asteriod.body.velocity.x = chosenastroid.velocityRock;
-      asteriod.body.velocity.y = chosenastroid.velocityRock;
+      asteriod.body.velocity.x = this.game.rnd.integerInRange(-20, 20);
+      asteriod.body.velocity.y = this.game.rnd.integerInRange(-20, 20);
       asteriod.body.immovable = true;
       asteriod.body.collideWorldBounds = true;
 
@@ -248,7 +309,6 @@ SpaceHipster.Game.prototype = {
 
 /*
 TODO
-
 -audio
 -asteriod bounch
 */
