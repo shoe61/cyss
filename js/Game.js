@@ -36,12 +36,13 @@ SpaceHipster.Game.prototype = {
     //  This will run in Canvas mode, so let's gain a little speed and display
     this.game.renderer.clearBeforeRender = false;
     this.game.renderer.roundPixels = true;
-    //  Our ships bullets
+    
+        //  Our ships bullets
     bullets = this.game.add.group();
     bullets.enableBody = true;
     bullets.physicsBodyType = Phaser.Physics.ARCADE;
     //  All 40 of them
-    bullets.createMultiple(40, 'bullet');
+    bullets.createMultiple(40, 'bullets');
     bullets.setAll('anchor.x', 0.5);
     bullets.setAll('anchor.y', 0.5);
     //endo ship and bullet stuff 
@@ -61,8 +62,8 @@ SpaceHipster.Game.prototype = {
     
     //enable player physics
     this.game.physics.arcade.enable(this.player);
-    this.player.body.drag.set(100);
-    this.player.body.maxVelocity.set(500);
+    this.player.body.drag.set(50);
+    this.player.body.maxVelocity.set(1000);
       
     // this.playerSpeed = 120; (replaced by ship and bullet stuff)
     this.player.body.collideWorldBounds = true; 
@@ -90,6 +91,7 @@ SpaceHipster.Game.prototype = {
     this.explosionSound = this.game.add.audio('explosion');
     console.log(this.explosionSound);
     this.collectSound = this.game.add.audio('collect');
+    this.fireSound = this.game.add.audio('fire');
 
     //Populate astroid sizes and store size
     this.sizeGen();
@@ -107,10 +109,7 @@ SpaceHipster.Game.prototype = {
     
     
   update: function() {
-    /*if(this.game.input.activePointer.justPressed()) {
-      //move on the direction of the input
-      this.game.physics.arcade.moveToPointer(this.player, this.playerSpeed);
-    }*/
+    
       
 if (cursors.up.isDown)
     {
@@ -136,45 +135,38 @@ if (cursors.up.isDown)
       
     if (this.game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR))
     {
-        fireBullet();
-    }
-      
-    
-      
-    function fireBullet () {        
+        this.fireBullet();
        
-    if (this.game.time.now > bulletTime)
-        {
-            bullet = bullets.getFirstExists(false);
-
-            if (bullet)
-            {
-                bullet.reset(sprite.body.x + 16, sprite.body.y + 16);
-                bullet.lifespan = 2000;
-                bullet.rotation = sprite.rotation;
-                game.physics.arcade.velocityFromRotation(sprite.rotation, 400, bullet.body.velocity);
-                bulletTime = this.game.time.now + 50;
-            }
-        }
     }
-        
-
-
-
+      
     
- 
-      
-      
-      
-      
-      
-
     //collision between player and asteroids
     this.game.physics.arcade.collide(this.player, this.asteroids, this.hitAsteroid, null, this);
 
     //overlapping between player and collectables
     this.game.physics.arcade.overlap(this.player, this.collectables, this.collect, null, this);
   },
+    
+    
+    fireBullet: function(){
+        
+        if (this.game.time.now > bulletTime){
+             bullet = bullets.getFirstExists(false);
+             if (bullet){
+            //play the sound
+            this.fireSound.play();
+            //  And fire it
+            bullet.reset(this.player.body.x, this.player.body.y);
+            bullet.lifespan = 2000;
+            bullet.rotation = this.player.rotation;
+            this.game.physics.arcade.velocityFromRotation(this.player.rotation, 400, bullet.body.velocity);
+            bulletTime = this.game.time.now + 50;
+            }
+        }
+       
+    },
+    
+    
 
     sizeGen: function(){
         //generate the ratio of large rocks

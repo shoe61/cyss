@@ -22,6 +22,8 @@ SpaceHipster.Preload.prototype = {
   	this.load.image('playerParticle', 'assets/images/player-particle.png');
     this.load.audio('collect', 'assets/audio/collect.ogg');
     this.load.audio('explosion', 'assets/audio/explosion.ogg');
+    this.load.audio('fire', 'assets/audio/blaster.ogg');
+    this.load.image('bullets', 'assets/images/bullets.png');
   },
   create: function() {
   	this.state.start('MainMenu');
