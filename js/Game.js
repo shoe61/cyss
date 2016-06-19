@@ -1,47 +1,104 @@
 var SpaceHipster = SpaceHipster || {};
 
-// Declare difficulty object
-var SkillLevel = {
-    // Define SkillLevel parameters;
-    easy: 2550,
-    medium: 50150,
-    hard: 150250,
-    choice: null
-    };
-// The ratio of large asteroids (0-100)
+// Declare difficulty variable
+var skillLevel;
+// Define skilllevel parameters;
+var Easy = 2550;
+var Medium = 50150;
+var Hard = 150250;
+
 var astroidarray = [];
 var ARRAY_NUM_TOTAL = 1000;
+
+//next five lines necessary for ship movement and bullets:
+var sprite;
+var cursors;
+
+//REDACTED - will confuse variable refrences in functions
+/*var bullet;
+var bullets;*/
+
+var bulletTime = 0;
+//endo ship and bullets stuff
+
 
 //title screen
 SpaceHipster.Game = function(){};
 
 SpaceHipster.Game.prototype = {
-  create: function() {
+
+
+    create: function() {
 
   	//set world dimensions
     this.game.world.setBounds(0, 0, 1920, 1920);
 
-    //background
+    //  This will run in Canvas mode, so let's gain a little speed and display
+    this.game.renderer.clearBeforeRender = false;
+    this.game.renderer.roundPixels = true;
+
+    //added for ship and bullet
+    //  We need arcade physics
+    this.game.physics.startSystem(Phaser.Physics.ARCADE);
+    //  This will run in Canvas mode, so let's gain a little speed and display
+    this.game.renderer.clearBeforeRender = false;
+    this.game.renderer.roundPixels = true;
+
+     //background
     this.background = this.game.add.tileSprite(0, 0, this.game.world.width, this.game.world.height, 'space');
+
+//REDACTED - changed "bullets" -> "this.bullets"
+  /*  //  Our ships bullets
+    bullets = this.game.add.group();
+    bullets.enableBody = true;
+    bullets.physicsBodyType = Phaser.Physics.ARCADE;
+    //  All 40 of them
+    bullets.createMultiple(40, 'bullets');
+    bullets.setAll('anchor.x', 0.5);
+    bullets.setAll('anchor.y', 0.5);
+    //endo ship and bullet stuff*/
+
+    //  Our ships bullets
+    this.bullets = this.game.add.group();
+    this.game.physics.arcade.enable(this.bullets);
+    this.bullets.enableBody = true;
+    this.bullets.physicsBodyType = Phaser.Physics.ARCADE;
+    //  All 40 of them
+    this.bullets.createMultiple(40, 'bullets');
+    this.bullets.setAll('anchor.x', 0.5);
+    this.bullets.setAll('anchor.y', 0.5);
+    //endo ship and bullet stuff
+
+
+
+    //added ship and bullet controls: game input
+    cursors = this.game.input.keyboard.createCursorKeys();
+    this.game.input.keyboard.addKeyCapture([ Phaser.Keyboard.SPACEBAR ]);
+    //endo ship and bullet stuff
+
 
     //create player
     this.player = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'playership');
     this.player.scale.setTo(2);
-    this.player.animations.add('fly', [0, 1, 2, 3], 5, true)
-    this.player.animations.play('fly');
+    this.player.anchor.set(0.5);
+
+    //enable player physics
+    this.game.physics.arcade.enable(this.player);
+    this.player.body.drag.set(50);
+    this.player.body.maxVelocity.set(1000);
+
+    // this.playerSpeed = 120; (replaced by ship and bullet stuff)
+    this.player.body.collideWorldBounds = true;
 
       //initializing the physics of asteroids
-      this.asteroids = this.game.add.group();
-      //enable physics in them
-      this.asteroids.enableBody = true;
+      this.asteroids = this.game.add.physicsGroup(Phaser.Physics.ARCADE);
+
+
 
     //player initial score of zero
     this.playerScore = 0;
 
-    //enable player physics
-    this.game.physics.arcade.enable(this.player);
-    this.playerSpeed = 120;
-    this.player.body.collideWorldBounds = true;
+
 
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
@@ -54,8 +111,8 @@ SpaceHipster.Game.prototype = {
 
     //sounds
     this.explosionSound = this.game.add.audio('explosion');
-    console.log(this.explosionSound);
     this.collectSound = this.game.add.audio('collect');
+    this.fireSound = this.game.add.audio('fire');
 
     //Populate astroid sizes and store size
     this.sizeGen();
@@ -63,22 +120,83 @@ SpaceHipster.Game.prototype = {
     //Debug
     console.log(astroidarray)
 
-    // every 10 secs process generateAsteroid
-    this.game.time.events.loop(500, this.generateAsteriod, this);
+    // every 2 secs process generateAsteroid
+    this.game.time.events.loop(2000, this.generateAsteriod, this);
   },
-  update: function() {
-    if(this.game.input.activePointer.justPressed()) {
 
-      //move on the direction of the input
-      this.game.physics.arcade.moveToPointer(this.player, this.playerSpeed);
+
+
+  update: function() {
+
+
+if (cursors.up.isDown)
+    {
+        this.game.physics.arcade.accelerationFromRotation(this.player.rotation, 200, this.player.body.acceleration);
     }
+    else
+    {
+        this.player.body.acceleration.set(0);
+    }
+
+    if (cursors.left.isDown)
+    {
+        this.player.body.angularVelocity = -300;
+    }
+    else if (cursors.right.isDown)
+    {
+        this.player.body.angularVelocity = 300;
+    }
+    else
+    {
+        this.player.body.angularVelocity = 0;
+    }
+
+    if (this.game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR))
+    {
+        this.fireBullet();
+
+    }
+
+
+    //collision of bullet and asteroid
+    this.game.physics.arcade.collide(this.bullets, this.asteroids, this.shootAsteroid, null, this);
 
     //collision between player and asteroids
     this.game.physics.arcade.collide(this.player, this.asteroids, this.hitAsteroid, null, this);
 
     //overlapping between player and collectables
     this.game.physics.arcade.overlap(this.player, this.collectables, this.collect, null, this);
+
+    //enable asteroid to asteroid collisions
+   this.game.physics.arcade.collide(this.asteroids);
+
+
   },
+
+
+    fireBullet: function(){
+
+        if (this.game.time.now > bulletTime){
+
+            //REDACTED - changed "bullets.getFirstExists" -> "this.bullets.getFirstExists"
+             /*bullet = bullets.getFirstExists(false);*/
+            bullet = this.bullets.getFirstExists(false);
+
+            if (bullet){
+            //play the sound
+            this.fireSound.play();
+            //  And fire it
+            bullet.reset(this.player.body.x + 16, this.player.body.y + 16);
+            bullet.lifespan = 2000;
+            bullet.rotation = this.player.rotation;
+            this.game.physics.arcade.velocityFromRotation(this.player.rotation, 400, bullet.body.velocity);
+            bulletTime = this.game.time.now + 50;
+            }
+        }
+
+    },
+
+
 
     sizeGen: function(){
         //generate the ratio of large rocks
@@ -104,7 +222,7 @@ SpaceHipster.Game.prototype = {
             for(var x = 0; x < Math.round(ARRAY_NUM_TOTAL * (rock_size_percent/100)); x++)
                 this.pushRocksToArray("large");
         }
-    },
+},
 
     pushRocksToArray: function(size){
        console.log("pushRocksToArray: " + size)
@@ -133,7 +251,7 @@ SpaceHipster.Game.prototype = {
             astroidarray.push(rockType);
         }
         console.log(rockType);
-    },
+},
 
   generateCollectables: function() {
     this.collectables = this.game.add.group();
@@ -179,21 +297,57 @@ SpaceHipster.Game.prototype = {
             astroidarray.reverse();
         }
 
-      //physics properties
+      //PHYSICS PROPERTIES
         //make the velocity either positive or negative
       chosenastroid.velocityRock *= this.game.rnd.pick([-1,1])
       asteriod.body.velocity.x = chosenastroid.velocityRock;
         //make the velocity either positive or negative
       chosenastroid.velocityRock *= this.game.rnd.pick([-1,1])
       asteriod.body.velocity.y = chosenastroid.velocityRock;
-      asteriod.body.immovable = true;
-      asteriod.body.collideWorldBounds = true;
+      //asteriod.body.immovable = true;
+      //asteriod.body.collideWorldBounds = true;
+      this.asteroids.setAll('body.collideWorldBounds', true);
+      this.asteroids.setAll('body.bounce.x', 1);
+	  this.asteroids.setAll('body.bounce.y', 1);
 
         //DEBUG
         console.log(asteriod.height)
       },
 
-  hitAsteroid: function(player, asteroid) {
+    shootAsteroid: function(bullet, asteroid) {
+    //play explosion sound
+
+        //REDACTED - "this.explosion" -> "this.explosionSound"
+    /*this.explosion.play();*/
+    this.explosionSound.play();
+
+
+    //make the asteroid explode
+
+        //REDACTED - "this.asteroid" -> "asteroid"
+    /*var emitter = this.add.emitter(this.asteroid.x, this.asteroid.y, 100);*/
+    var emitter = this.game.add.emitter(asteroid.x, asteroid.y, 100);
+
+    emitter.makeParticles('playerParticle');
+    emitter.minParticleSpeed.setTo(-200, -200);
+    emitter.maxParticleSpeed.setTo(200, 200);
+    emitter.gravity = 0;
+    emitter.start(true, 1000, null, 100);
+
+        //REDACTED - "this.asteroid" -> "asteroid.kill"
+    /*this.asteroid.kill();*/
+
+    asteroid.kill();
+
+    //Kill the bullet on impact
+    bullet.kill();
+    },
+
+
+
+
+
+    hitAsteroid: function(player, asteroid) {
     //play explosion sound
     this.explosionSound.play();
 
@@ -208,6 +362,8 @@ SpaceHipster.Game.prototype = {
 
     this.game.time.events.add(800, this.gameOver, this);
   },
+
+
   gameOver: function() {
     //pass it the score as a parameter
     this.game.state.start('MainMenu', true, false, this.playerScore);
@@ -232,9 +388,3 @@ SpaceHipster.Game.prototype = {
   }
 };
 
-/*
-TODO
-
--audio
--asteriod bounch
-*/
