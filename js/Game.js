@@ -2,13 +2,15 @@ var SpaceHipster = SpaceHipster || {};
 
 // Declare difficulty variable
 var skillLevel;
-// Define skilllevel parameters;
-var Easy = 2550;
-var Medium = 50150;
-var Hard = 150250;
+
+// ss Define skilllevel parameters;
+var Easy;
+var Medium;
+var Hard;
 // The ratio of large asteroids (0-100)
 var astroidarray = [];
 var ARRAY_NUM_TOTAL = 1000;
+var numberAsteroids = 0;
 
 //next five lines necessary for ship movement and bullets:
 var sprite;
@@ -30,7 +32,20 @@ SpaceHipster.Game.prototype = {
  
     
     create: function() {
-
+        
+    // ss generate number of asteroids for skill level            
+    Easy = this.game.rnd.integerInRange(25, 50);
+    Medium = this.game.rnd.integerInRange(50, 150);
+    Hard = this.game.rnd.integerInRange(150, 250);
+    console.log("Easy: " + Easy);
+    console.log("Medium: " + Medium);
+    console.log("Hard: " + Hard); 
+        
+    //ss select skill level Easy
+    maxAsteroids = Easy;
+    console.log("maxAsteroids: " + maxAsteroids);
+             
+    
   	//set world dimensions
     this.game.world.setBounds(0, 0, 1920, 1920);
         
@@ -158,7 +173,7 @@ if (cursors.up.isDown)
       
     //collision of bullet and asteroid
     this.game.physics.arcade.collide(this.bullets, this.asteroids, this.shootAsteroid, null, this);
-    console.log("shot asteroid") + (this.shootAsteroid)
+   
     
     this.game.physics.arcade.collide(this.asteroids);
       
@@ -191,7 +206,7 @@ if (cursors.up.isDown)
         //generate the ratio of large rocks
         var rock_size_percent = this.game.rnd.integerInRange(0, 100);
         //DEBUG
-        console.log("rocksize%: " + rock_size_percent);
+        //console.log("rocksize%: " + rock_size_percent);
         //if zero percent of rocks are large
         if (rock_size_percent == 0)
             //push all small rocks to array
@@ -214,7 +229,7 @@ if (cursors.up.isDown)
 },
 
     pushRocksToArray: function(size){
-       console.log("pushRocksToArray: " + size)
+       //console.log("pushRocksToArray: " + size)
 
         var rockType = {
             sizePick: null,
@@ -239,7 +254,7 @@ if (cursors.up.isDown)
             //Temp push to populate velocity (based on weighted array)
             astroidarray.push(rockType);
         }
-        console.log(rockType);
+        //console.log(rockType);
 },
 
   generateCollectables: function() {
@@ -268,7 +283,15 @@ if (cursors.up.isDown)
         var chosenastroid = this.game.rnd.weightedPick(astroidarray);
 
       // MAKE THE ASTEROID
+      
+      //ss added if statement ends on ln 323
+      if(numberAsteroids < maxAsteroids){
       asteriod = this.asteroids.create(this.game.world.randomX, this.game.world.randomY, 'rock');
+        
+       //ss increment number of asteroids
+       numberAsteroids ++;
+        console.log("numberAsteroids: " + numberAsteroids);
+          
         //scale asteroid by picking from arrayindex and grabbing its size data
         var pik = chosenastroid.sizePick / 1000 * 20;
       asteriod.scale.setTo(pik);
@@ -281,7 +304,7 @@ if (cursors.up.isDown)
             //if small weigh toward higher speeds
             astroidarray.reverse();
             chosenastroid.velocityRock = this.game.rnd.weightedPick(astroidarray).sizePick * 1.2 ;
-            console.log("astro reverse small: " + chosenastroid.velocityRock);
+            //console.log("astro reverse small: " + chosenastroid.velocityRock);
             //Put back in order
             astroidarray.reverse();
         }
@@ -301,6 +324,7 @@ asteriod.body.velocity.y = chosenastroid.velocityRock;
         
         //DEBUG
         //console.log(asteriod.height)
+      }
       },
     
     shootAsteroid: function(bullets, asteroids) {
