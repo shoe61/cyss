@@ -1,10 +1,10 @@
 var SpaceHipster = SpaceHipster || {};
 
 //title screen
-SpaceHipster.MainMenu = function(){};
+SpaceHipster.MainMenu = function () {};
 
 SpaceHipster.MainMenu.prototype = {
-  init: function(score) {
+    init: function (score) {
     var score = score || 0;
     this.highestScore = this.highestScore || 0;
 
@@ -18,17 +18,23 @@ SpaceHipster.MainMenu.prototype = {
     this.background.autoScroll(-20, 0);
 
     //start game text
-    var text = "Tap to begin";
+    var text = "Left click to begin";
     var style = { font: "30px Arial", fill: "#fff", align: "center" };
     var t = this.game.add.text(this.game.width/2, this.game.height/2, text, style);
     t.anchor.set(0.5);
 
     //highest score
     text = "Highest score: "+this.highestScore;
-    style = { font: "15px Arial", fill: "#fff", align: "center" };
-
-    var h = this.game.add.text(this.game.width/2, this.game.height/2 + 50, text, style);
+    style = { font: "20px Arial", fill: "#fff", align: "center" };
+    var h = this.game.add.text(this.game.width/2, this.game.height/2 + 40, text, style);
     h.anchor.set(0.5);
+      
+    //instructions
+    text = "LEFT / RIGHT arrows to rotate; UP arrow for thrust; SPACEBAR to fire weapon"
+    style = { font: "15px Arial", fill: "#fff", align: "center" };
+    var i = this.game.add.text(this.game.width/2, this.game.height/2 + 75, text, style);
+    i.anchor.set(0.5);
+      
   },
   update: function() {
     if(this.game.input.activePointer.justPressed()) {
